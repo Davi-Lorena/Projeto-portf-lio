@@ -56,3 +56,9 @@ justify-content: center;
     font: var(--title-md);
     text-align: center;
     }
+
+    a {
+text-decoration: none;
+color: inherit;
+
+    }
