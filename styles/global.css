@@ -30,11 +30,18 @@
 
 --font-incon: 'Inconsolata', sans-serif;
 
---sub-title: Regular 20px/120% var(--font-incon);
+--sub-title: 400 20px/120% var(--font-incon);
 
---font-maven: 'Maven+Pro', sans-serif; 
+--font-maven: 'Maven Pro', sans-serif; 
 
---text-md: Regular 16px/140% var(--font-maven);
---text-sm: Regular 14px/140% var(--font-maven);
+--text-md: 400 16px/140% var(--font-maven);
+--text-sm: 400 14px/140% var(--font-maven);
 
 }
+
+.grid-apl {
+    display: grid;
+align-items: center;
+justify-content: center;
+}
+

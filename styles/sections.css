@@ -1,0 +1,161 @@
+#intro {
+background-image: url(../assets/images/Background_Intro.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: grid;
+align-items: center;
+justify-content: center;
+padding-top: 120px;
+
+header {
+    display: grid;
+    margin-inline: auto;
+
+    #img-icn {
+        margin-inline: auto;
+        margin-bottom: 56px;
+    }
+
+
+    #profile {
+        border-radius: 50%;
+        border: solid #E3646E;
+
+    }
+
+
+h2 {
+    font: var(--sub-title);
+    color: var(--gray-500);
+    margin-bottom: 8px;
+    text-align: center;
+
+strong {
+    color: var(--red-color);
+} }
+
+h1 {
+    font: var(--title-lg);
+    color: var(--gray-600);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+font: var(--text-sm);
+color: var(--gray-400);
+text-align: center;
+margin-bottom: 80px;
+
+}
+
+
+
+}}
+
+#icones {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icn {
+    display: flex;
+align-items: center;
+gap: 8px;
+background-color: var(--gray-300);
+height: 40px;
+padding: 8px 16px;
+border-radius: 999px;
+
+img {
+    height: 24px;
+    width: 24px;
+}
+
+
+span {
+    font: var(--text-md);
+    color: var(--gray-500);
+}
+
+
+}
+
+
+#set {
+margin-inline: auto;
+margin-top: 94px;
+}
+
+
+#projects {
+background-color: var(--gray-200);
+
+header {
+padding-block: 72px 56px;
+display: grid;
+align-items: center;
+justify-content: center;
+gap: 8px;
+
+
+h2 {
+color: var(--red-color);
+font: var(--sub-title);
+text-align: center;
+}
+
+h1 {
+color: var(--gray-600);
+font: var(--title-md);
+
+}}
+
+}
+
+#six-prj {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+   max-width: 1040px;
+  margin-inline: auto;
+  padding-bottom: 144px;
+  
+}
+
+.card-div {
+background-color: var(--gray-300);
+border-radius: 8px;
+max-width: 330px;
+max-height: 280px;
+
+img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 306px;
+height: 156px;
+margin: 12px;
+}
+
+
+h3 {
+    color: var(--gray-600);
+    font: var(--title-sm);
+    margin: 4px;
+}
+p {
+    color: var(--gray-500);
+    font: var(--text-sm);
+    margin: 4px;
+}
+
+.handp {
+margin-inline: 12px;
+margin-bottom: 17px;
+
+}
+
+}
