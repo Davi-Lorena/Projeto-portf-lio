@@ -45,3 +45,14 @@ align-items: center;
 justify-content: center;
 }
 
+.headt {
+    color: var(--red-color);
+    font: var(--sub-title);
+    text-align: center;
+    }
+    
+    .heado {
+    color: var(--gray-600);
+    font: var(--title-md);
+    text-align: center;
+    }
