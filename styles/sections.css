@@ -98,7 +98,10 @@ span {
     color: var(--gray-500);
 }
 
-
+cursor: pointer;
+&:hover {
+    outline: 1.5px solid var(--gray-400);
+}
 }
 
 
@@ -162,6 +165,10 @@ p {
 margin-inline: 12px;
 margin-bottom: 17px;
 
+}
+
+&:hover {
+    outline: 1.5px solid var(--gray-400);
 }
 
 }
@@ -255,14 +262,23 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 width: 400px;
+cursor: pointer;
+&:hover {
+    outline: 1.5px solid var(--blue-color);
+
+    & svg path {
+        stroke: var(--blue-color);
+    }
+}
 
 div {
     display: flex;
     align-items: center;
     gap: 12px;
+    
 }
 
-.logo {
+svg {
     margin-block: 20px;
     margin-left: 20px;
 }
@@ -278,6 +294,7 @@ a {
 }
 
 }
+
 
 }
 
