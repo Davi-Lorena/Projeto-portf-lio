@@ -37,6 +37,14 @@
 --text-md: 400 16px/140% var(--font-maven);
 --text-sm: 400 14px/140% var(--font-maven);
 
+/* Layout */
+
+--max-width: 1280px; 
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .grid-ap {
@@ -61,4 +69,10 @@ justify-content: center;
 text-decoration: none;
 color: inherit;
 
+    }
+
+    @media (width <= 490px) {
+        :root {
+            --max-width: 375px; 
+        }
     }

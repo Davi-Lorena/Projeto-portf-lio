@@ -2,11 +2,12 @@
 background-image: url(../assets/images/Background_Intro.png);
 background-repeat: no-repeat;
 background-size: cover;
-height: 100vh;
+margin-inline: auto;
+height: 100%;
 display: grid;
 align-items: center;
 justify-content: center;
-padding-top: 120px;
+padding-top: 7.5rem;
 
 header {
     display: grid;
@@ -14,7 +15,7 @@ header {
 
     #img-icn {
         margin-inline: auto;
-        margin-bottom: 56px;
+        margin-bottom: 3.5rem;
         width: fit-content;
     position: relative;
     }
@@ -23,10 +24,10 @@ header {
     #profile {
         border-radius: 50%;
         border: solid #E3646E;
-        padding: 4px;
-        max-width: 96px;
-        max-height: 96px;
-       
+        padding: .25rem;
+        max-width: 6rem;
+        max-height: 6rem;
+       object-fit: cover;
     }
 
     #svg {
@@ -45,7 +46,7 @@ header {
 h2 {
     font: var(--sub-title);
     color: var(--gray-500);
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     text-align: center;
 
 strong {
@@ -56,14 +57,14 @@ h1 {
     font: var(--title-lg);
     color: var(--gray-600);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 p {
 font: var(--text-sm);
 color: var(--gray-400);
 text-align: center;
-margin-bottom: 80px;
+margin-bottom: 5rem;
 
 }
 
@@ -73,41 +74,44 @@ margin-bottom: 80px;
 
 #icones {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-icn {
     display: flex;
 align-items: center;
-gap: 8px;
+gap: .5rem;
 background-color: var(--gray-300);
-height: 40px;
-padding: 8px 16px;
+height: 2.5rem;
+padding: .5rem 1rem;
+cursor: pointer;
 border-radius: 999px;
+transition: outline 300ms ease, scale 400ms ease-in;
 
-img {
-    height: 24px;
-    width: 24px;
+& img {
+    height: 1.5rem;
+    aspect-ratio: 1;
 }
 
 
-span {
+& span {
     font: var(--text-md);
     color: var(--gray-500);
 }
 
-cursor: pointer;
 &:hover {
     outline: 1.5px solid var(--gray-400);
+    scale: 1.1;
 }
 }
 
 
 #set {
 margin-inline: auto;
-margin-top: 94px;
+margin-top: 5.875rem;
 }
 
 
@@ -115,23 +119,24 @@ margin-top: 94px;
 background-color: var(--gray-200);
 
 header {
-padding-block: 72px 56px;
+padding-block: 4.75rem 3.5rem;
 display: grid;
 align-items: center;
 justify-content: center;
-gap: 8px;
+gap: .5rem;
 
 }
 
 }
 
 #six-prj {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-   max-width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+   max-width: 65rem;
   margin-inline: auto;
-  padding-bottom: 144px;
+  padding-bottom: 9rem;
   
 }
 
@@ -141,6 +146,8 @@ border-radius: 8px;
 max-width: 330px;
 max-height: 280px;
 cursor: pointer;
+transition: all 600ms ease;
+
 img {
     border-radius: 8px;
     object-fit: cover;
@@ -169,6 +176,7 @@ margin-bottom: 17px;
 
 &:hover {
     outline: 1.5px solid var(--gray-400);
+    scale: 1.05;
 }
 
 }
@@ -177,35 +185,36 @@ margin-bottom: 17px;
 background-color: var(--gray-100);
 
 header {
-    padding-top: 88px;
+    padding-top: 5.5rem;
     display: grid;
-    gap: 8px;
+    gap: .5rem;
 }
 
 #especify {
 display: flex;
-padding-block: 56px 120px;
+flex-wrap: wrap;
+padding-block: 3.5rem 7.5rem;
 justify-content: center;
 align-items: center;
-gap: 24px;
+gap: 1.5rem;
 }
 
 .card-work {
 border: solid 2px var(--gray-200);
-border-radius: 12px;
+border-radius: 0.75rem;
 
 img {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
 }
 
 div {
-    margin: 20px;
+    margin: 1.25rem;
 
 h3 {
 color: var(--gray-600);
 font: var(--title-sm);
-margin-bottom: 8px;
+margin-bottom: .5rem;
 }
 
 p {
@@ -225,62 +234,70 @@ p {
 background-image: url(../assets/images/Background_Contacts.png);
 background-repeat: no-repeat;
 background-size: cover;
+margin-inline: auto;
 
 
-
-    header {
+  & header {
 display: grid;
 align-items: center;
 justify-content: center;
-padding-top: 128px;
-gap: 8px;
-margin-bottom: 48px;
+padding-top: 8rem;
+gap: .5rem;
+margin-bottom: 3rem;
 
-h2 {
+& h2 {
     text-align: center;
     color: var(--purple-color);
     font: var(--sub-title);
 }
 
-h3 {
+& h3 {
+    padding: .75rem;
+    text-align: center;
 font: var(--text-md);
 color: var(--gray-500);
 
 } }
 
-#links {
+& #links {
 display: grid;
 align-items: center;
+padding-bottom: 12.5rem;
+gap: 1rem;
 justify-content: center;
-padding-bottom: 200px;
-gap: 16px;
-
-.card-midia {
+margin-inline: auto;
+& .card-midia {
 background-color:  var(--gray-300);
-border-radius: 8px;
+border-radius: .5rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
-width: 400px;
+width: 25rem;
+transition: all 600ms ease;
 cursor: pointer;
+
+& svg path {
+transition: fill 600ms ease;
+}
+
 &:hover {
     outline: 1.5px solid var(--blue-color);
 
     & svg path {
-        stroke: var(--blue-color);
+        fill: var(--blue-color);
     }
 }
 
 div {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: .75rem;
     
 }
 
 svg {
-    margin-block: 20px;
-    margin-left: 20px;
+    margin-block: 1.25rem;
+    margin-left: 1.25rem;
 }
 
 span {
@@ -289,8 +306,8 @@ font: var(--text-md);
 }
 
 a {
-    margin-block: 24px;
-    margin-right: 20px;
+    margin-block: 1.5rem;
+    margin-right: 1.25rem;
 }
 
 }
@@ -301,4 +318,60 @@ a {
 
 }
 
+
+@media (width <= 490px) {
+    body {
+        overflow-x: hidden;
+    }
+#intro {
+    
+    & header { 
+        max-width: var(--max-width);
+        padding: 1rem;
+
+& h2 {
+    font-size: 1rem;
+    text-wrap: wrap;
+}
+
+& h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-wrap: wrap;
+}
+
+& p {
+    margin-bottom: 2rem;
+    text-wrap: wrap;
+}
+
+}
+}
+
+#set {
+    margin-top: 2rem;
+}
+
+#work {
+    padding: 1rem;
+    & header {
+        padding: 1rem;
+        gap: 0.25rem;
+    }
+    
+}
+
+#contact {
+
+    #links { 
+        max-width: var(--max-width); 
+
+    & .card-midia {
+        width: 20rem;
+    }
+    }
+}
+
+
+}
 
